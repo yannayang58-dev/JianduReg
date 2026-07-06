@@ -19,7 +19,7 @@ JianduReg/
 │   │   ├── fracture_B.ply
 │   │   └── gt.json
 │   └── synthetic_pair/
-│       ├── fracture_A.ply
-│       ├── fracture_B.ply
+│       ├── fracture_A_0000.ply
+│       ├── fracture_B_0000.ply
 │       └── gt_transform.json
 └── results/
