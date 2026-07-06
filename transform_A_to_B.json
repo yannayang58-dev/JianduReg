@@ -1,0 +1,77 @@
+{
+    "definition": "target_point ≈ R @ source_point + t",
+    "registration_direction": "source_A_to_target_B",
+    "registration_input": {
+        "source_face_A": "D:\\three_D\\scan_test\\scan_real_0\\4\\fracture_faces\\fracture_A.ply",
+        "target_face_B": "D:\\three_D\\scan_test\\scan_real_0\\4\\fracture_faces\\fracture_B.ply"
+    },
+    "applied_to_visualization": {
+        "source_whole_A": "D:\\three_D\\scan_test\\scan_real_0\\4\\fragments\\fragment_B.ply",
+        "target_whole_B": "D:\\three_D\\scan_test\\scan_real_0\\4\\fragments\\fragment_A.ply"
+    },
+    "voxel_size": 0.31610832063881644,
+    "R": [
+        [
+            -0.2725463800355794,
+            0.6500300275087939,
+            -0.7093514178927316
+        ],
+        [
+            -0.8528682650355706,
+            0.17803548468760913,
+            0.4908350931700731
+        ],
+        [
+            0.4453472726139951,
+            0.738758640916607,
+            0.505867054912949
+        ]
+    ],
+    "t": [
+        349.4600026956768,
+        -130.66813588228203,
+        153.5558945498438
+    ],
+    "T_source_to_target": [
+        [
+            -0.2725463800355794,
+            0.6500300275087939,
+            -0.7093514178927316,
+            349.4600026956768
+        ],
+        [
+            -0.8528682650355706,
+            0.17803548468760913,
+            0.4908350931700731,
+            -130.66813588228203
+        ],
+        [
+            0.4453472726139951,
+            0.738758640916607,
+            0.505867054912949,
+            153.5558945498438
+        ],
+        [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+        ]
+    ],
+    "metrics_on_fracture_surface": {
+        "open3d_fitness": 0.5444733903982136,
+        "open3d_inlier_rmse": 0.21760864098720428,
+        "bidirectional_inlier_ratio": 0.42698467155798975,
+        "source_to_target_inlier": 0.5233026764493128,
+        "target_to_source_inlier": 0.33066666666666666,
+        "bidirectional_mean_error": 0.16499841763679407,
+        "bidirectional_median_error": 0.12016971845762907,
+        "bidirectional_rmse": 0.20536723045554842,
+        "bidirectional_q90_error": 0.3785825675177648,
+        "score": 0.7120038094168751,
+        "det_R": 0.9999999999999991,
+        "rotation_orthogonality_error": 2.9505139538598156e-14
+    },
+    "note": "RT is estimated from fracture surfaces only, then directly applied to the whole Jiandu point cloud. The selection score uses bidirectional nearest-neighbor consistency, which is more robust than one-way fitness.",
+    "runtime_sec": 25.02576470375061
+}
